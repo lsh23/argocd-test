@@ -1,0 +1,10 @@
+bases:
+- ../../base
+patchesStrategicMerge:
+  - deployment-patch.yaml
+  - service-patch.yaml
+commonLabels:
+  env: dev
+images:
+- name: nginx
+  newTag: latest
